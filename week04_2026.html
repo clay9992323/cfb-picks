@@ -56,11 +56,6 @@
          font-size:18px; font-weight:600; line-height:1.15}
   .kpi span{font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3)}
 
-  .note{border-left:3px solid var(--weak); background:var(--sunken);
-        padding:11px 13px; margin:18px 0 6px; border-radius:0 4px 4px 0}
-  .note p{margin:0; font-size:13px; color:var(--ink-2); max-width:76ch}
-  .note p+p{margin-top:6px}
-  .note strong{color:var(--ink)}
 
   /* ---------- controls ---------- */
   .filters{display:flex; gap:6px; flex-wrap:wrap; margin:18px 0 4px}
@@ -257,15 +252,6 @@
   </div>
 
   <div id="weekview">
-  <div class="note">
-    <p><strong>Not recommended bets.</strong> Backtested on 3,333 games (2021&ndash;2025) this
-      model hits <span class="mono">49.74%</span> against the closing line; break-even is
-      <span class="mono">52.38%</span>.</p>
-    <p>Its measurable edge is closing-line value &mdash; <span class="mono">+5.8&nbsp;pp</span>
-      drift-adjusted, and positive at every spread size. It is strongest in games priced
-      inside two touchdowns and fades to <span class="mono">+2.0&nbsp;pp</span> past 21,
-      so the biggest disagreements remain the <em>least</em> trustworthy, though they are no longer counter-productive. Week 4 is also near the weakest point of the season: roughly 3 games of evidence per team.</p>
-  </div>
 
   <div class="filters" role="group" aria-label="Filter games">
     <button class="f" id="f-all" aria-pressed="true">All games</button>
@@ -288,6 +274,10 @@
     <p>Market numbers are the consensus across available books. Garbage-time plays are filtered
       by CFBD win probability; drive metrics exclude end-of-half kneel-downs and defensive scores.
       AP ranks are the poll standing entering week 4.</p>
+    <p>Backtested on 3,333 games (2021&ndash;2025): spread error <span class="mono">12.58</span>
+      against the closing line's <span class="mono">12.11</span>, and
+      <span class="mono">49.7%</span> against the spread where break-even is
+      <span class="mono">52.4%</span>. Week 4 is also near the weakest point of the season: roughly 3 games of evidence per team.</p>
   </footer>
 </div>
 
